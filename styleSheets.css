@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+}
+
+#first-container{
+    height: 20rem;
+    width: 20rem;
+    background-color: black;
+    transition: 6s width, 6s background-color 500ms;
+}
+
+#first-container:hover{
+    background-color: lightslategrey;
+    width: 30rem;
+}
+
+#second-container{
+    height: 20rem;
+    width: 20rem;
+}
+
+.para{
+    font-size: 1rem;
+    transition: 6s font-size, 6s background-color 6s ease;
+}
+
+.para:hover{
+    color: blue;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 320px) {
+    #first-container{
+        height: 120px;
+        width: 120px;
+    }
+
+    .para{
+       font-size: 0.5rem;
+
+    }
+}
